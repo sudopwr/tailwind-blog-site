@@ -1,0 +1,20 @@
+{
+  "name": "tailwind-blog-site",
+  "version": "1.0.0",
+  "description": "Blogging Site in Tailwind CSS",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build-css": "tailwindcss-cli build tailwind.css -o ./dist/tailwind.css",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-sudopwr:sudopwr/tailwind-blog-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss-cli": "^0.1.2"
+  }
+}
