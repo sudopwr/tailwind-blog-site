@@ -1,12 +1,84 @@
 <!doctype html>
 <html>
+
 <head>
-    <title>Hello World</title>
+  <title>Hello World</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/dist/tailwind.css" rel="stylesheet">
 </head>
-<body>
-  <button class="bg-red-500">Hello</button>
+
+<body class="bg-gray-50">
+  <nav class="bg-blue-100">
+    <div class="hidden md:block">
+      <div class="flex items-center justify-between h-24 sm:px-6">
+        <div class="flex">
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
+        </div>
+        <div class="flex items-center">
+          <img class="h-20 w-20" src="images/new-sudo.png" alt="Workflow" />
+        </div>
+        <div class="flex">
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="block md:hidden">
+      <div class="flex items-center justify-between h-24 px-2">
+        <div class="flex items-center">
+          <img class="h-20 w-20" src="images/new-sudo.png" alt="Workflow" />
+        </div>
+        <button onclick="toggleMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-800">
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden" id="mobileMenuContent">
+        <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium block">Home</a>
+        <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium block">Blogs</a>
+        <div class="flex">
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const mobileMenuContent = document.getElementById('mobileMenuContent')
+      if (mobileMenuContent.getAttribute('class') === 'hidden') {
+        mobileMenuContent.setAttribute('class', 'block') 
+      } else {
+        mobileMenuContent.setAttribute('class', 'hidden') 
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/9418f17761.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
