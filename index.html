@@ -8,16 +8,16 @@
   <link href="/dist/tailwind.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
     * {
-      font-family: 'Yusei Magic', sans-serif;
+      font-family: 'Raleway', sans-serif;
     }
   </style>
 </head>
 
 <body class="bg-gray-50">
-  <nav class="bg-blue-100">
+  <nav id="navigation" class="bg-blue-100">
     <div class="hidden md:block">
       <div class="flex items-center justify-between h-24 sm:px-6">
         <div class="flex">
@@ -79,7 +79,8 @@
   </nav>
 
   <section id="intro" class="bg-blue-100 p-10">
-    <div class="flex justify-center md:flex-row flex-col">
+
+    <div class="grid md:grid-cols-2 grid-rows-1">
       <div class="m-auto md:text-left text-center text-gray-800 animate__animated animate__fadeInLeft animate__slow">
         <h1 class="text-sm">Hello, I am <i class="fas fa-code"></i></h1>
         <h1 class="lg:text-6xl text-4xl mt-1">SUDO POWER</h1>
@@ -106,17 +107,66 @@
           </a>
         </div>
       </div>
-      <div class="p-10 flex justify-end animate__animated animate__fadeInRight animate__slow">
+      <div class="p-10 animate__animated animate__fadeInRight animate__slow">
         <img class="lg:w-3/4 " src="images/undraw_on_the_office_fbfs.svg" />
       </div>
     </div>
   </section>
 
   <section id="blogs">
-    <div class="">
-      <h1 class="text-3xl md:text-left text-center">Blogs</h1>
+    <div class="p-16">
+      <h1 class="text-5xl md:text-left text-center text-gray-800 font-bold">Blogs</h1>
+    </div>
+
+    <div class="grid grid-cols-5 m-16 space-x-9 space-y-9">
+
+      <div class="border rounded-xl p-8 bg-blue-200">
+        <img class="rounded-xl" src="images/blog1.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!</p>
+      </div>
+
+      <div class="border rounded-xl p-8 bg-pink-200">
+        <img class="rounded-xl" src="images/blog2.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Learn CSS</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!</p>
+      </div>
+
+      <div class="border rounded-xl p-8 bg-gray-200">
+        <img class="rounded-xl" src="images/blog5.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Website Hosting</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!</p>
+      </div>
+
+
+      <div class="border rounded-xl p-8 bg-yellow-200">
+        <img class="rounded-xl" src="images/blog3.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Learn Web Development</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!</p>
+      </div>
+
+
+      <div class="border rounded-xl p-8 bg-green-200">
+        <img class="rounded-xl" src="images/blog4.jpg" />
+
+        <h1 class="text-2xl mt-6 font-bold">Git and GitHub</h1>
+        <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+    <div class="p-16">
+      <h1 class="text-5xl md:text-left text-center text-gray-800 font-bold">Contact</h1>
     </div>
   </section>
+
 
   <script>
     function toggleMenu() {
