@@ -13,6 +13,7 @@
     * {
       font-family: 'Raleway', sans-serif;
     }
+
   </style>
 </head>
 
@@ -81,7 +82,7 @@
   <section id="intro" class="bg-green-100 p-10">
 
     <div class="grid md:grid-cols-2 grid-rows-1">
-      <div class="m-auto md:text-left text-center text-gray-800 animate__animated animate__fadeInLeft animate__slow">
+      <div class="m-auto md:text-left text-center text-gray-800 animate__animated animate__fadeInLeft">
         <h1 class="text-sm">Hello, I am <i class="fas fa-code"></i></h1>
         <h1 class="lg:text-6xl text-4xl mt-1">SUDO POWER</h1>
         <h1 class="md:text-2xl text-xl mt-4">Web UI/UX Designer</h1>
@@ -107,7 +108,7 @@
           </a>
         </div>
       </div>
-      <div class="p-10 animate__animated animate__fadeInRight animate__slow">
+      <div class="p-10 animate__animated animate__fadeInRight">
         <img class="lg:w-3/4 " src="images/undraw_on_the_office_fbfs.svg" />
       </div>
     </div>
@@ -118,61 +119,53 @@
       <h1 class="lg:text-5xl md:text-4xl text-2xl md:text-left text-center text-gray-800">Blogs</h1>
     </div>
 
-    <div class="grid lg:grid-cols-5 md:grid-cols-3 grid-rows-1 lg:mx-16 md:mx-8 mx-4 lg:gap-9 md:gap-5 gap-4">
-
-      <div class="border rounded-xl p-8 bg-blue-200">
+    <div
+      class="grid lg:grid-cols-5 md:grid-cols-3 grid-rows-1 lg:mx-16 md:mx-8 mx-4 lg:gap-9 md:gap-5 gap-4">
+      <div class="border rounded-xl p-8 bg-blue-200 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog1.jpg" />
 
         <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
         <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
         </p>
       </div>
-
-
-      <div class="border rounded-xl p-8 bg-pink-200">
+      <div class="border rounded-xl p-8 bg-pink-200 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog2.jpg" />
 
         <h1 class="text-2xl mt-6 font-bold">Learn CSS</h1>
         <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
         </p>
       </div>
-
-      <div class="border rounded-xl p-8 bg-gray-200">
+      <div class="border rounded-xl p-8 bg-gray-200 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog5.jpg" />
 
         <h1 class="text-2xl mt-6 font-bold">Website Hosting</h1>
         <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
         </p>
       </div>
-
-
-      <div class="border rounded-xl p-8 bg-yellow-200">
+      <div class="border rounded-xl p-8 bg-yellow-200 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog3.jpg" />
 
         <h1 class="text-2xl mt-6 font-bold">Learn Web Development</h1>
         <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
         </p>
       </div>
-
-
-      <div class="border rounded-xl p-8 bg-green-200">
+      <div class="border rounded-xl p-8 bg-green-200 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog4.jpg" />
 
         <h1 class="text-2xl mt-6 font-bold">Git and GitHub</h1>
         <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working hard!!!
         </p>
       </div>
-
     </div>
 
     <div class="border rounded-xl bg-green-200 m-16 lg:mx-16 md:mx-8 mx-4 p-8">
       <div class="grid md:grid-cols-2 grid-rows-1">
-        <div class="animate__animated animate__fadeInLeft animate__slow">
+        <div class="wow animate__animated animate__zoomIn">
           <img class="rounded-xl" src="images/blog4.jpg" />
         </div>
 
         <div class="flex items-center">
-          <div class="p-10">
+          <div class="p-10 wow animate__animated animate__zoomIn">
             <h1 class="text-2xl mt-6 font-bold">Git and GitHub</h1>
             <p class="text-sm mt-3">Learn HTML in Hindi Free SUDO POWER YouTube Channel. Keep Learning, Keep Working
               hard!!!
@@ -190,7 +183,6 @@
     </div>
   </section>
 
-
   <script>
     function toggleMenu() {
       const mobileMenuContent = document.getElementById('mobileMenuContent')
@@ -202,6 +194,11 @@
     }
   </script>
   <script src="https://kit.fontawesome.com/9418f17761.js" crossorigin="anonymous"></script>
+
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init({ mobile: false });
+  </script>
 </body>
 
 </html>
