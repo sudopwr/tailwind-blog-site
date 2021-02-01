@@ -4,7 +4,7 @@
   "description": "Blogging Site in Tailwind CSS",
   "main": "tailwind.config.js",
   "scripts": {
-    "build-css": "tailwindcss-cli build tailwind.css -o ./dist/tailwind.css",
+    "build-css": "tailwindcss-cli build ./css/tailwind.css -o ./dist/tailwind.css",
     "start": "",
     "live-server": "live-server"
   },
