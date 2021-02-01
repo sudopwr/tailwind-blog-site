@@ -5,7 +5,8 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build-css": "tailwindcss-cli build tailwind.css -o ./dist/tailwind.css",
-    "start": ""
+    "start": "",
+    "live-server": "live-server"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "live-server": "^1.2.1",
     "tailwindcss-cli": "^0.1.2"
   }
 }
