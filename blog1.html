@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SODO POWER</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/tailwind.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+        * {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body class="bg-gray-50">
+    <nav id="navigation" class="bg-green-100">
+        <div class="hidden md:block">
+            <div class="flex items-center justify-between h-24 sm:px-6">
+                <div class="flex">
+                    <a href="#"
+                        class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-semibold">Home</a>
+                    <a href="#"
+                        class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-semibold">Blogs</a>
+                    <a href="#"
+                        class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-semibold">About</a>
+                </div>
+                <div class="flex items-center">
+                    <img class="h-20 w-20" src="images/new-sudo.png" alt="Workflow" />
+                </div>
+                <div>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block md:hidden">
+            <div class="flex items-center justify-between h-24 px-2">
+                <div class="flex items-center">
+                    <img class="h-20 w-20" src="images/new-sudo.png" alt="Workflow" />
+                </div>
+                <button onclick="toggleMenu()"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-800">
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden" id="mobileMenuContent">
+                <a href="#"
+                    class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium block">Home</a>
+                <a href="#"
+                    class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium block">Blogs</a>
+                <div class="flex">
+                    <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="blogs">
+        <div class="border rounded-xl bg-green-200 m-16 lg:mx-16 md:mx-8 mx-4 p-8">
+            <div class="grid md:grid-cols-2 grid-rows-1">
+                <div class="animate__animated animate__zoomIn">
+                    <img class="rounded-xl" src="images/blog6.jpg" />
+                </div>
+
+                <div class="flex items-center">
+                    <a href="#" class="text-gray-700 hover:text-gray-900">
+                        <div class="p-10 animate__animated animate__zoomIn">
+                            <h1 class="text-2xl mt-6 font-bold hover:underline">SEO Tips and Tricks</h1>
+                            <p class="text-sm mt-3">
+                                By <span class="font-bold">SUDO POWER</span> <br />
+                                Feb 1, 2021.
+                            </p>
+                            <div class="mt-8">
+                                <a href="#"
+                                    class="text-gray-500 hover:text-gray-800 pr-3 py-2 rounded-md text-sm font-medium">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#"
+                                    class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#"
+                                    class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#"
+                                    class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-16 lg:mx-16 md:mx-8 mx-4 p-8">
+            <h1 class="text-lg">
+                In this blog, you can learn how to improve your website <span class="text-green-600 font-bold">Search
+                    Engine Optimization</span> and get your
+                website in <span class="text-green-600 font-bold">top search</span>. <br /><br />
+
+                Before starting work on Blog or any content site. You should have to <span
+                    class="text-green-600 font-bold">do some research on whether your
+                    technology stack supports SEO things or not.</span> <br /><br />
+
+                For example: I am using <span class="text-green-600 font-bold">Angular Scully</span> which is an angular
+                static site generator. The problem which I
+                faced with the only angular is not enough because as other SPA Technology, it is render HTML after page
+                load so Whenever crawler scrap your website. It failed to find out the meta tags. <br /><br />
+
+                The solution is you have to use <span class="text-green-600 font-bold">Server Side Rendering</span> or
+                <span class="text-green-600 font-bold">Static Site Generator</span> or rendertron. There are
+                many options available for every SPA(Angular, Vue, and React). <br /><br />
+
+                If you have already developed SPA application and you don't want to add server-side rendering then you
+                can use <span class="text-green-600 font-bold">rendertron</span> which is pretty much good design for
+                this purpose. <br /><br />
+            </h1>
+
+            <h1 class="mt-4 text-3xl text-green-600 font-bold">
+                SEO(Search Engine Optimazation) Tips and Tricks
+            </h1>
+
+            <div id="step1" class="mt-8">
+                <h2 class="mt-4 text-2xl">
+                    1. Register your domain to <span class="text-green-600 font-bold">Google Search Console</span>
+                </h2>
+                <h3 class="mt-3">
+                    Search Console tools and reports help you measure your site's Search traffic and performance, fix
+                    issues, and make your site shine in Google Search results.
+                </h3>
+
+                <ul class="mt-3 leading-loose">
+                    <li> <i class="fas fa-chevron-right"></i> Open Link <a class="text-blue-500"
+                            href="https://search.google.com/search-console/welcome">https://search.google.com/search-console/welcome</a>
+                    </li>
+                    <li> <i class="fas fa-chevron-right"></i> Add your domain in URL prefix </li>
+                    <li> <i class="fas fa-chevron-right"></i> Verify your ownership </li>
+                    <li> <i class="fas fa-chevron-right"></i> Choose the HTML Tag verify technique which I think easy
+                    </li>
+                    <li> <i class="fas fa-chevron-right"></i> Done </li>
+                </ul>
+            </div>
+
+            <div id="step2" class="mt-8">
+                <h2 class="mt-4 text-2xl">
+                    2. Choose the Best title for your Blog
+                </h2>
+                <h3 class="mt-3">
+                    Ubersuggest tool which use to check trend and volume search about the topic. You can easily install
+                    the extension and just search on google. It will show you details on the right side of the page.
+                    <br/>
+                    Update your <title></title> tag with your title which is really important. The title should not be
+                    the same across whole the website.
+
+                    This is the best SEO Tips and Tricks which helps you to find out the correct title for your content
+                    or blog.
+
+                    For example:
+                </h3>
+
+                <ul class="mt-3 leading-loose">
+                    <li> <i class="fas fa-chevron-right"></i> Open Link <a class="text-blue-500"
+                            href="https://search.google.com/search-console/welcome">https://search.google.com/search-console/welcome</a>
+                    </li>
+                    <li> <i class="fas fa-chevron-right"></i> Add your domain in URL prefix </li>
+                    <li> <i class="fas fa-chevron-right"></i> Verify your ownership </li>
+                    <li> <i class="fas fa-chevron-right"></i> Choose the HTML Tag verify technique which I think easy
+                    </li>
+                    <li> <i class="fas fa-chevron-right"></i> Done </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="p-20 bg-gray-800">
+        <div class="flex flex-col text-center text-white">
+            <i class="fas fa-star"></i>
+            <h1 class="md:text-4xl text-2xl my-5 wow animate__animated animate__zoomIn">sudopwr@gmail.com</h1>
+            <div class="my-10 wow animate__animated animate__zoomIn">
+                <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenuContent = document.getElementById('mobileMenuContent')
+            if (mobileMenuContent.getAttribute('class') === 'hidden') {
+                mobileMenuContent.setAttribute('class', 'block')
+            } else {
+                mobileMenuContent.setAttribute('class', 'hidden')
+            }
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/9418f17761.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
